@@ -3,7 +3,7 @@ $user = $null
 $server = $null
 $serverPassword = $null
 $server = Read-Host "Enter Server Name"
-$user = "domain\admin_myid"
+$user = "domain\myid"
 $serverPassword = "password"
 cmdkey /generic:TERMSRV/$server /user:$user /pass:$serverPassword
 mstsc /v:$server /w:800 /h:600
